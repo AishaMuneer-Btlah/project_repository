@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_12_9/core/themes/light_theme.dart';
 import 'package:project_12_9/helper/route_manger.dart';
 
 void main() {
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: appLightTheme,
      debugShowCheckedModeBanner: false,
     initialRoute: '/home',
       onGenerateRoute: RouteManger.appRoute,
